@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/styles/common.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="text_container">
+                <input type="text" class="input title" placeholder="Title...">
+                <input type="text" class="input about" placeholder="About...">
+            </div>
+            <button class="add_button">+</button>
+        </div>
+        <div class="task_section" id="taskSection">
+            <hr class="top_line">
+            <p class="no_tasks" id="noTasksMessage">No tasks</p>
+            <hr class="top_line">
+        </div>
+        <div id="confirmationModal" class="modal hidden">
+            <div class="modal_content">
+                <h4>Delete this task?</h4>
+                <div class="modal_buttons">
+                    <button class="confirm_button" id="confirmDelete">Yes</button>
+                    <button class="cancel_button" id="cancelDelete">No</button>
+                </div>
+            </div>
+        </div>
+        <div id="editModal" class="hidden">
+            <div class="modal">
+                <div class="edit_modal_content">
+                    <div class="text_container">
+                        <input type="text" class="input mini_input mb-12" placeholder="Mini input...">
+                        <textarea type="text" class="textarea max_input" rows="15" placeholder="Max input..."></textarea>
+                    </div>
+                    <div class="edit_modal_buttons">
+                        <button class="cancel_button" id="cancel">Cancel</button>
+                        <button class="save_button" id="save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shareModal" class="modal hidden">
+            <div class="edit_modal_content">
+                <div class="share_buttons">
+                    <button class="share_button" id="copyToClipboard"><img src="/src/assets/images/copy.svg"/></button>
+                    <button class="share_button" id="shareVK"><img src="/src/assets/images/vk.svg"/></button>
+                    <button class="share_button" id="shareTelegram"><img src="/src/assets/images/telegram.svg"/></button>
+                    <button class="share_button" id="shareWhatsApp"><img src="/src/assets/images/whats.svg"/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
